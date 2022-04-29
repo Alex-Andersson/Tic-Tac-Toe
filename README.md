@@ -1,46 +1,58 @@
-# Getting Started with Create React App and Redux
+# Instruktioner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Todo
 
-## Available Scripts
+- Ge en responsiv & optimal design för spelet beroende på enhetens skärmstorlek
+- Ge hovereffekts för alla interaktiva element på sidan
+- Spela spelet antingen solo mot datorn eller mot en annan person lokalt
+- Skapa logiken för spelet
 
-In the project directory, you can run:
+### Bonus
+- Bonus 1: Spara spelstatusen i webbläsaren så att den bevaras om spelaren uppdaterar sin webbläsare
+- Bonus 2: Istället för att låta datorn göra sina drag slumpmässigt, försök att göra den smart så att den är proaktiv när det gäller att blockera dina drag och försöka vinna
 
-### `npm start`
+## Komma igång
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Git
+- Öppna terminalen
+- Navigera dig till den path du vill klona projektet i
+- Skriv: `git clone https://github.com/MMR-Solutions-AB/Tic-Tac-Toe.git`
+- Skapa ett repository på GitHub och länka Git till den
+- Boka en tid med en handledare om du behöver hjälp med detta
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Referensbilder & material
 
-### `npm test`
+För att komma igång kan du referera till referensbilderna som finns i ```reference``` i rotmappen för att arbeta mot det önskade resultatet. 
+I den här mappen kommer du att kunna se ett visuellt resultat hur applikationen ska se ut men också ge dig tips om vilken funktionalitet och logik som den kräver.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fonten som används i applikationen är [Outfit](https://fonts.google.com/specimen/Outfit). Se denna [artikel](https://blog.greenroots.info/3-quick-ways-to-add-fonts-to-your-react-app) på hur du importerar custom typsnitt till React.
 
-### `npm run build`
+Alla ikoner & bilder som behövs i projektet ligger i ```public/assets```.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Arbetsområden
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Jag rekommenderar att du segmenterar arbetsområdena i 3 olika områden. Logik, funktionalitet och design. På så sätt lär ni er hur man arbetar som ett team och är beroende av varandra för att klara uppgiften. När du är färdig med ditt arbetsområde hjälper du din lagkamrat att komma över mållinjen genom att hjälpa till med resterande uppgifter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Kom ihåg att detta alltid är en rekommendation, ni bestämmer själva hur ni vill tilldela arbetet inom gruppen.
 
-### `npm run eject`
+#### Logik
+Det logiska arbetsområdet ansvarar för att skapa logiken i applikationen. Till exempel en funktion som avgör vinnaren av spelet eller lagrar speldata på vilka platser spelaren har ockuperat i spelfältet.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Funktionalitet
+Detta arbetsområdet är ett slags mellanstadie mellan logik och design som hjälper dem att interagera med varandra. Detta område är ansvarigt för till exempel att bestämma vilken screen som ska visas beroende på spelets tillstånd och rendera den korrekta designen i olika scenarion.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Detta arbetsområde är ansvarigt för att skapa alla komponenter för appen och utforma dem i enlighet med referensbilderna dvs den visuella delen. Du är ansvarig för t.ex att skapa knappar men även responsivitet och layout.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tips
 
-## Learn More
+- React har ett fantastiskt [exempel](https://codepen.io/gaearon/pen/gWWZgR?editors=0010) på hur ett Tic-Tac-Toe-spel kan göras i React. Läs även [artikeln](https://reactjs.org/tutorial/tutorial.html) hur man kan gå tillväga.
+- Skapa ett GitHub repository och bjud in dina lagkamrater som contributer så att alla kan bidra till projektet utan att någon måste starta en Live Share session. Skaparen av repositoryt kan läsa denna [artikel](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) hur man bjuder in lagkamrater till projektet.
+- Planera i god tid med dina lagkamrater och boka en gemensam handledning med en handledare ifall ni sitter fast.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Bonus tips
+- Rekommenderar att ni lär er verktyget Trello genom att kika på denna [5-minuters videon](https://www.youtube.com/watch?v=xky48zyL9iA). Trello är ett verktyg som tillåter er att tilldela uppgifter i gruppen och enkelt kan se status på respektive uppgift. Detta ger er en översiktlig bild hur olika områden går i projektet och ger en kommunikativ fördel.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deadline
+Projektet ska laddas upp på GitHub på fredag d. 29 April med en länk till respektive handledare.

@@ -1,0 +1,47 @@
+@use 'utilities/variables' as v;
+
+.bottom-bar {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 64px;
+  margin-top: 20px;
+}
+
+.score {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-amount {
+    font-size: v.$font-size-small;
+    font-weight: v.$font-weight-medium;
+  }
+
+  &.left {
+    background: v.$color-cyan-lighter;
+  }
+
+  &.center {
+    background: v.$color-gray;
+  }
+    
+  &.right {
+    background: v.$color-yellow;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    border-radius: 15px;
+    height: 72px;
+  }
+  
+  .score-amount {
+    font-size: v.$font-size-medium;
+    letter-spacing: v.$font-kerning-medium;
+  }
+}

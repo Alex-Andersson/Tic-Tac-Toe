@@ -1,0 +1,42 @@
+@use 'utilities/variables' as v;
+
+.board {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+  background: v.$color-cyan;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0 -8px 0 v.$color-cyan-darkest;
+  min-height: 96px;
+  min-width: 96px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 460px;
+    min-height: 140px;
+    min-width: 140px;
+  }
+
+  >img {
+    height: 40px;
+    pointer-events: none;
+    width: 40px;
+
+    @media screen and (min-width: 768px) {
+      height: 64px;
+      width: 64px;
+    }
+  }
+}
+
+.winning-line-X {
+  background: v.$color-cyan-lightest;
+}
+
+.winning-line-O {
+  background: v.$color-yellow-light;
+}

@@ -1,0 +1,51 @@
+@use 'utilities/variables'as v;
+
+* {
+  box-sizing: border-box;
+  transition: ease all .33s;
+}
+
+body {
+  background: v.$color-cyan-dark;
+  font-family: v.$font-family;
+  font-size: v.$font-size-body;
+  font-weight: v.$font-weight-body;
+  letter-spacing: v.$font-kerning-body;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 327px;
+  min-width: 327px;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+button, .logo {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    min-width: 460px;
+  }
+}
